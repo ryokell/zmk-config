@@ -41,63 +41,63 @@
 / { 
         keymap {
       compatible = "zmk,keymap";
-  	layer0 QWERTY {
+  	layer0_QWERTY {
           bindings = <
           &kp Q 	&kp W 		&kp E 		&kp R 		&kp T 			&kp Y 		&kp U 		&kp I 		&kp O 		&kp P 
 	  &mt LSHFT A 	&lt 5 S 	&kp D 		&lt 3 F 	&kp G 			&kp H 		&lt 4 J 	&lt 2 K 	&lt 6 L 	&mt LSHFT SEMI 
 	  &kp Z 	&mt LCTRL X 	&mt LALT C 	&mt LCTRL V 	&kp B 			&kp N 		&kp M 		&mt LALT COMMA 	&mt LCTRL DOT 	&kp SLASH 
 	  						&kp KP_N0 	&kp BSPC 		&lt 7 SPACE 	&lt 8 KP_N1
           >;
-        };layer1 GAMEPAD {
+        };layer1_GAMEPAD {
           bindings = <
           &none 	&none 		&kp W 		&none 		&none 			&trans 		&trans 		&trans 		&trans 		&none 
 	  &kp LSHFT 	&kp A 		&kp S		&kp D 		&none 			&trans 		&trans 		&trans 		&trans 		&trans 
 	  &kp LCTRL 	&none 		&none 		&none 		&none 			&trans 		&trans 		&trans 		&trans 		&trans 
 	  						&none 		&kp SPACE		&trans 		&trans
           >;
-        };layer2 ARROWS {
+        };layer2_ARROWS {
           bindings = <
           &trans 	&trans 		&kp PG_UP 	&trans 		&trans 			&trans 		&trans 		&trans 		&trans 		&trans 
 	  &kp LEFT 	&kp UP 		&kp DOWN 	&kp RIGHT 	&trans 			&trans 		&kp LEFT_GUI 	&none 		&kp LC(LALT) 	&kp LC(LA(LSHFT)) 
 	  &trans 	&kp HOME 	&kp PG_DN 	&kp END 	&trans 			&trans 		&trans 		&trans 		&trans 		&trans 
 	  						&trans 		&trans 			&trans 		&trans
           >;
-        };layer3 RSYM {
+        };layer3_RSYM {
           bindings = <
           &trans 	&trans 		&trans 		&trans 		&trans 			&trans 		&kp UNDER 	&kp PIPE 	&kp APOS	&trans 
 	  &kp CARET 	&kp STAR 	&kp AMPS 	&none	 	&trans 			&kp HASH 	&kp TILDE 	&kp SLASH 	&kp DQT 	&kp DLLR 
 	  &trans 	&trans 		&trans 		&trans 		&trans 			&trans 		&kp MINUS 	&kp BACKSLASH 	&kp GRAVE 	&trans 
 	  						&trans	 	&trans 			&trans 		&trans
           >;
-        };layer4 LSYM {
+        };layer4_LSYM {
           bindings = <
           &trans 	&kp COLON 	&kp LT 		&kp GT 		&kp SEMI 		&trans 		&trans 		&trans 		&trans 		&trans 
 	  &kp lbrc 	&kp RBRC 	&kp LPAR 	&kp RPAR 	&kp AT 			&trans 		&none		&kp EQUAL 	&kp PLUS 	&kp PRCNT 
 	  &trans 	&kp EXCL 	&kp LBRKT 	&kp RBRKT 	&trans 			&trans 		&trans 		&trans 		&trans 		&trans 
 	  						&kp C_VOL_DN 	&trans 			&trans 		&kp C_VOL_UP
           >;
-        };layer5 F_KEYS {
+        };layer5_F_KEYS {
           bindings = <
           &trans 	&trans 		&trans 		&trans 		&trans 			&trans 		&kp F7 		&kp F8 		&kp F9 		&kp F10 
 	  &trans 	&none	 	&kp LC(LALT) 	&trans 		&trans 			&trans 		&kp F4 		&kp F5 		&kp F6 		&kp F11 
 	  &trans 	&trans 		&trans 		&trans 		&trans 			&trans 		&kp F1 		&kp F2 		&kp F3 		&kp F12 
 	  						&trans 		&trans 			&trans 		&trans
           >;
-        };layer6 NUMPAD {
+        };layer6_NUMPAD {
           bindings = <
           &kp KP_SLASH 	&kp N7 		&kp N8 		&kp N9 		&kp KP_PLUS 		&trans 		&trans 		&trans 		&trans 		&trans 
 	  &kp N0 	&kp N1 		&kp N2 		&kp N3 		&kp KP_MINUS 		&trans 		&trans 		&trans 		&none		&trans 
 	  &kp KP_ASTERISK &kp N4 	&kp N5 		&kp N6 		&kp EQUAL 		&trans 		&trans 		&trans 		&trans 		&trans 
 	  						&trans 		&trans 			&trans 		&trans
           >;
-        };layer7 ALWAYS {
+        };layer7_ALWAYS {
           bindings = <
           &trans 	&trans 		&kp COLON 	&kp ESC 	&trans 			&trans 		&trans 		&trans 		&trans 		&kp DEL 
 	  &trans 	&kp PRCNT	&kp SLASH 	&kp ENTER 	&trans 			&tog 1 		&kp LEFT_GUI 	&trans 		&trans 		&trans 
 	  &trans 	&trans 		&trans 		&kp EXCL 	&trans 			&trans 		&trans 		&kp RA(COMMA) 	&kp RC(DOT)	&reset
 	  						&trans 		&kp TAB 		&kp F20 	&trans
           >;
-        };layer8 BT_Control {
+        };layer8_BT_Control {
           bindings = <
           &bootloader 	&trans 		&bt BT_SEL 1	&bt BT_SEL 4	&trans 			&trans 		&trans 		&trans 		&trans 		&bootloader 
 	  &trans 	&trans 		&bt BT_SEL 2	&bt BT_SEL 5	&trans 			&trans 		&trans 		&trans 		&trans 		&trans 
