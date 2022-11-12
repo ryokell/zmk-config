@@ -57,12 +57,12 @@
           >;
         };
 	
-		layer1_GAMEPAD {
+		layer4_LSYM {
           bindings = <
-          &none 	&none 		&kp W 		&none 		&none 			&trans 		&trans 		&trans 		&trans 		&none 
-	  &kp LSHFT 	&kp A 		&kp S		&kp D 		&none 			&trans 		&trans 		&trans 		&trans 		&trans 
-	  &kp LCTRL 	&none 		&none 		&none 		&none 			&trans 		&trans 		&trans 		&trans 		&trans 
-	  						&none 		&kp SPACE		&trans 		&trans
+          &trans 	&kp COLON 	&kp LT 		&kp GT 		&kp SEMI 		&trans 		&trans 		&trans 		&trans 		&trans 
+	  &kp LBRC 	&kp RBRC 	&kp LPAR 	&kp RPAR 	&kp AT 			&trans 		&none		&kp EQUAL 	&kp PLUS 	&kp PRCNT 
+	  &trans 	&kp EXCL 	&kp LBKT 	&kp RBKT 	&trans 			&trans 		&trans 		&trans 		&trans 		&trans 
+	  						&kp C_VOL_DN 	&trans 			&trans 		&kp C_VOL_UP
           >;
         };
 	
