@@ -46,7 +46,7 @@
 	  &trans 	&kp HOME 	&kp PG_DN 	&kp END 	&trans 			&trans 		&trans 		&trans 		&trans 		&trans 
 	  						&trans 		&trans 			&trans 		&trans
           >;
-        };	
+        };
 		
 		layer3_RSYM {
           bindings = <
@@ -55,7 +55,16 @@
 	  &trans 	&trans 		&trans 		&trans 		&trans 			&trans 		&kp MINUS 	&kp BACKSLASH 	&kp GRAVE 	&trans 
 	  						&trans	 	&trans 			&trans 		&trans
           >;
-        };	
+        };
+	
+		layer4_LSYM {
+          bindings = <
+          &trans 	&kp COLON 	&kp LT 		&kp GT 		&kp SEMI 		&trans 		&trans 		&trans 		&trans 		&trans 
+	  &kp LBRC 	&kp RBRC 	&kp LPAR 	&kp RPAR 	&kp AT 			&trans 		&none		&kp EQUAL 	&kp PLUS 	&kp PRCNT 
+	  &trans 	&kp EXCL 	&kp LBRKT 	&kp RBRKT 	&trans 			&trans 		&trans 		&trans 		&trans 		&trans 
+	  						&kp C_VOL_DN 	&trans 			&trans 		&kp C_VOL_UP
+          >;
+        };
         
 	};
 };
