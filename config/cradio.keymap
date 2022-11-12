@@ -72,7 +72,7 @@
         };layer4_LSYM {
           bindings = <
           &trans 	&kp COLON 	&kp LT 		&kp GT 		&kp SEMI 		&trans 		&trans 		&trans 		&trans 		&trans 
-	  &kp lbrc 	&kp RBRC 	&kp LPAR 	&kp RPAR 	&kp AT 			&trans 		&none		&kp EQUAL 	&kp PLUS 	&kp PRCNT 
+	  &kp LBRC 	&kp RBRC 	&kp LPAR 	&kp RPAR 	&kp AT 			&trans 		&none		&kp EQUAL 	&kp PLUS 	&kp PRCNT 
 	  &trans 	&kp EXCL 	&kp LBRKT 	&kp RBRKT 	&trans 			&trans 		&trans 		&trans 		&trans 		&trans 
 	  						&kp C_VOL_DN 	&trans 			&trans 		&kp C_VOL_UP
           >;
