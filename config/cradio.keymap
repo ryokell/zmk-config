@@ -21,14 +21,14 @@
         keymap {
                 compatible = "zmk,keymap";
                 
-       		default_layer {
-		bindings = <
-		&kp Q &kp W &kp E &kp R &kp T 						&kp Y &kp U  &kp I    &kp O   &kp P 
-		&kp A &kp S &kp D &kp F &kp G 			        	        &kp H &kp J &kp K &kp L &kp QUOT
-		&mt LSFT Z &kp X &kp C &kp V &kp B				        &kp N &kp M  &kp CMMA &kp DOT &mt LSFT RET
-          				&mo 1 &kp LCTL  				&kp SPC &mo 2 
-		>;
-		};
+       		layer0_QWERTY {
+          bindings = <
+          &kp Q 	&kp W 		&kp E 		&kp R 		&kp T 			&kp Y 		&kp U 		&kp I 		&kp O 		&kp P 
+	  &mt LSHFT A 	&lt 5 S 	&kp D 		&lt 3 F 	&kp G 			&kp H 		&lt 4 J 	&lt 2 K 	&lt 6 L 	&mt LSHFT SEMI 
+	  &kp Z 	&mt LCTRL X 	&mt LALT C 	&mt LCTRL V 	&kp B 			&kp N 		&kp M 		&mt LALT COMMA 	&mt LCTRL DOT 	&kp SLASH 
+	  						&kp KP_N0 	&kp BSPC 		&lt 7 SPACE 	&lt 8 KP_N1
+          >;
+        };
 
        		left_layer {
 		bindings = <
