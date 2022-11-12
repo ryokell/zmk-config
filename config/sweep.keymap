@@ -11,6 +11,17 @@
 #include <dt-bindings/zmk/reset.h>
 #include <dt-bindings/zmk/ext_power.h>
 
+//Layer Definitions
+	#define QWERTY 0
+	#define GAMEPAD 1
+	#define ARROWS 2
+	#define RSYM 3
+	#define LSYM 4
+	#define F-KEYS 5
+	#define NUMPAD 6
+	#define ALWAYS 7
+	#define BT Control 8
+
 //gqt: global-quick-tap {
 //	compatible = "zmk,behavior-hold-tap";
 //	label = "GLOBAL_QUICK_TAP";
