@@ -17,10 +17,10 @@
 	#define ARROWS 2
 	#define RSYM 3
 	#define LSYM 4
-	#define F-KEYS 5
+	#define F_KEYS 5
 	#define NUMPAD 6
 	#define ALWAYS 7
-	#define BT Control 8
+	#define BT_Control 8
 
 //gqt: global-quick-tap {
 //	compatible = "zmk,behavior-hold-tap";
@@ -58,7 +58,7 @@
         };layer2 ARROWS {
           bindings = <
           &trans 	&trans 		&kp PG_UP 	&trans 		&trans 			&trans 		&trans 		&trans 		&trans 		&trans 
-	  &kp LEFT 	&kp UP 		&kp DOWN 	&kp RIGHT 	&trans 			&trans 		&kp LEFT_GUI 	&none 		&kp LC(LALT) 	&kp LC(LA(LSHIFT)) 
+	  &kp LEFT 	&kp UP 		&kp DOWN 	&kp RIGHT 	&trans 			&trans 		&kp LEFT_GUI 	&none 		&kp LC(LALT) 	&kp LC(LA(LSHFT)) 
 	  &trans 	&kp HOME 	&kp PG_DN 	&kp END 	&trans 			&trans 		&trans 		&trans 		&trans 		&trans 
 	  						&trans 		&trans 			&trans 		&trans
           >;
@@ -76,7 +76,7 @@
 	  &trans 	&kp EXCL 	&kp LBRKT 	&kp RBRKT 	&trans 			&trans 		&trans 		&trans 		&trans 		&trans 
 	  						&kp C_VOL_DN 	&trans 			&trans 		&kp C_VOL_UP
           >;
-        };layer5 F-KEYS {
+        };layer5 F_KEYS {
           bindings = <
           &trans 	&trans 		&trans 		&trans 		&trans 			&trans 		&kp F7 		&kp F8 		&kp F9 		&kp F10 
 	  &trans 	&none	 	&kp LC(LALT) 	&trans 		&trans 			&trans 		&kp F4 		&kp F5 		&kp F6 		&kp F11 
@@ -97,7 +97,7 @@
 	  &trans 	&trans 		&trans 		&kp EXCL 	&trans 			&trans 		&trans 		&kp RA(COMMA) 	&kp RC(DOT)	&reset
 	  						&trans 		&kp TAB 		&kp F20 	&trans
           >;
-        };layer8 BT Control {
+        };layer8 BT_Control {
           bindings = <
           &bootloader 	&trans 		&bt BT_SEL 1	&bt BT_SEL 4	&trans 			&trans 		&trans 		&trans 		&trans 		&bootloader 
 	  &trans 	&trans 		&bt BT_SEL 2	&bt BT_SEL 5	&trans 			&trans 		&trans 		&trans 		&trans 		&trans 
