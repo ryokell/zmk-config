@@ -11,6 +11,28 @@
 #include <dt-bindings/zmk/reset.h>
 #include <dt-bindings/zmk/ext_power.h>
 
+//Layer Definitions
+	#define QWERTY 0
+	#define GAMEPAD 1
+	#define ARROWS 2
+	#define RSYM 3
+	#define LSYM 4
+	#define F_KEYS 5
+	#define NUMPAD 6
+	#define ALWAYS 7
+	#define BT_Control 8
+	
+//gqt: global-quick-tap {
+//	compatible = "zmk,behavior-hold-tap";
+//	label = "GLOBAL_QUICK_TAP";
+//	#binding-cells = <2>;
+//	flavor = "hold-preferred";
+//	tapping-term-ms = <200>;
+//	quick-tap-ms = <-1>;
+//	global-quick-tap;
+//	bindings = <&kp>, <&kp>;
+//};
+
 
 &mt {
 	flavor = "hold-preferred";
@@ -95,9 +117,9 @@
 		
 		layer8_BT_Control {
           bindings = <
-          &bootloader 	&trans 		&bt BT_SEL 1	&bt BT_SEL 4	&trans 			&trans 		&trans 		&trans 		&trans 		&bootloader 
-	  &trans 	&trans 		&bt BT_SEL 2	&bt BT_SEL 5	&trans 			&trans 		&trans 		&trans 		&trans 		&trans 
-	  &bt BT_CLR 	&trans 		&bt BT_SEL 3	&bt BT_SEL 6	&trans 			&trans 		&trans 		&trans 		&trans 		&trans 
+          &bootloader 	&trans 		&bt BT_SEL 0	&bt BT_SEL 3	&trans 			&trans 		&trans 		&trans 		&trans 		&bootloader 
+	  &trans 	&trans 		&bt BT_SEL 1	&bt BT_SEL 4	&trans 			&trans 		&out OUT_BLE	&out OUT_USB	&trans 		&trans 
+	  &bt BT_CLR 	&trans 		&bt BT_SEL 2	&bt BT_SEL 5	&trans 			&trans 		&trans 		&trans 		&trans 		&trans 
 	  						&trans 		&trans 			&trans 		&none
           >;
         };
