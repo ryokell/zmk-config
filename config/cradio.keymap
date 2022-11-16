@@ -20,18 +20,7 @@
 	#define F_KEYS 5
 	#define NUMPAD 6
 	#define ALWAYS 7
-	#define BT_Control 8
-	
-gqt: global-quick-tap {
-	compatible = "zmk,behavior-hold-tap";
-	label = "GLOBAL_QUICK_TAP";
-	#binding-cells = <2>;
-	flavor = "tap-preferred";
-	tapping-term-ms = <200>;
-	quick-tap-ms = <-1>;
-	global-quick-tap;
-	bindings = <&kp>, <&kp>;
-};
+	#define BT_Control 
 
 
 &mt {
