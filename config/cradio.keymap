@@ -99,7 +99,7 @@
           bindings = <
           &trans 	&trans 		&kp COLON 	&kp ESC 	&trans 			&trans 		&trans 		&trans 		&trans 		&kp DEL 
 	  &trans 	&kp PRCNT	&kp SLASH 	&kp ENTER 	&trans 			&tog 1 		&kp LEFT_GUI 	&trans 		&trans 		&trans 
-	  &trans 	&trans 		&trans 		&kp EXCL 	&trans 			&trans 		&trans 		&kp RA(COMMA) 	&kp RC(DOT)	&reset
+	  &trans 	&trans 		&trans 		&kp EXCL 	&trans 			&trans 		&trans 		&kp RA(COMMA) 	&kp RC(DOT)	&sys_reset
 	  						&trans 		&kp TAB 		&kp F20 	&trans
           >;
         };
